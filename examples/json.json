@@ -1,0 +1,56 @@
+{
+  "incandenzas": [
+    "james",
+    "avril",
+    "orin",
+    "mario",
+    "hal"
+  ],
+  "comment": {
+    "line": {
+      "double-slash": "// comment",
+      "double-dash": "",
+      "number-sign": "",
+      "percentage": ""
+    }
+  },
+  "level one key": "level one value",
+  "un": {
+    "deux": {
+      "trois": {
+        "quatre": {
+          "cinque": {
+            "six": {
+              "sept": {
+                "huit": {
+                  "neuf": {
+                    "dix": "ten"
+                  },
+                  "level": "nine"
+                },
+                "level": "eight"
+              },
+              "level": "seven"
+            },
+            "level": "six"
+          },
+          "level": "five"
+        },
+        "level": "four"
+      },
+      "level": "three"
+    },
+    "level": "two"
+  },
+  "level": "one",
+  "numbers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "colours": {
+    "blue": "#ffffff"
+  }
+}

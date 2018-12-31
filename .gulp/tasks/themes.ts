@@ -13,14 +13,34 @@ import {ensureDir, getDefaultValues} from './../../extensions/helpers/fs';
 
 const commons = getDefaultValues();
 
-const themeTemplateFileContent: string = fs.readFileSync(path.join(paths.SRC, '/themes/theme-template-color-theme.json'), CHARSET);
+const themeTemplateFileContent: string =
+  fs.readFileSync(
+    path.join(
+      paths.SRC,
+      '/themes/theme-template-color-theme.json'
+    ),
+    CHARSET
+  );
+
 const themeVariants: IThemeVariant[] = [];
 
-const fileNames: string[] = fs.readdirSync(path.join(paths.SRC, './themes/settings/specific'));
+const fileNames: string[] =
+  fs.readdirSync(
+    path.join(
+      paths.SRC,
+      './themes/settings/specific'
+    )
+  );
 
 // build theme variants for later use in templating
 fileNames.forEach(fileName => {
-  const filePath: string = path.join(paths.SRC, './themes/settings/specific', `./${fileName}`);
+  const filePath: string =
+    path.join(
+      paths.SRC,
+      './themes/settings/specific',
+      `./${fileName}`
+    );
+
   const contents: string = fs.readFileSync(filePath, CHARSET);
 
   try {
@@ -48,7 +68,7 @@ export default gulp.task('build:themes', cb => {
 
       fs.writeFileSync(filePath, templateJSONStringified, {encoding: CHARSET});
 
-      gulpUtil.log(MESSAGE_GENERATED, gulpUtil.colors.green(filePath));
+      gulpUtil.log(MESSAGE_GENERATED, gulpUtil.colors.blue(filePath));
     });
   } catch (exception) {
     gulpUtil.log(exception);
