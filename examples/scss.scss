@@ -1,0 +1,28 @@
+// Fonts/Typography
+// _____________________________________________________________________________
+
+// Name definitions
+// _____________________________________________________________________________
+$irvin-text: "Irvin Text";
+$irvin-heading: "Irvin Heading";
+$neutra-face: "Neutra Face";
+$adobe-caslon: "Adobe Caslon";
+$graphik-web: "Graphik Web";
+
+// Common fallbacks
+$sans-serif-fallbacks: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-fallbacks: Georgia, "Times New Roman", Times, serif;
+
+// Implementations
+// _____________________________________________________________________________
+// Use these definitions to make fallbacks a bit more DRY.
+$IrvinText: "#{$irvin-text}", $serif-fallbacks;
+$IrvinHeading: "#{$irvin-heading}", $sans-serif-fallbacks;
+$NeutraFace: "#{$neutra-face}", $sans-serif-fallbacks;
+$AdobeCaslon: "#{$adobe-caslon}", $serif-fallbacks;
+$Helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$Graphik: "#{$graphik-web}", $sans-serif-fallbacks;
+
+body {
+  background-color: #eeeeee;
+}
