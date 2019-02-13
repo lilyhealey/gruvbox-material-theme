@@ -842,7 +842,7 @@
     "gitDecoration.conflictingResourceForeground": "{{variant.scheme.base.yellow}}90",
     "gitDecoration.modifiedResourceForeground": "{{variant.scheme.base.blue}}90",
     "gitDecoration.untrackedResourceForeground": "{{variant.scheme.base.green}}90",
-    "gitDecoration.ignoredResourceForeground": "{{variant.scheme.sidebarForeground}}90",
+    "gitDecoration.ignoredResourceForeground": "{{variant.scheme.sidebarForeground}}80",
     "peekViewResult.selectionBackground": "{{variant.scheme.sidebarForeground}}70",
     "breadcrumb.background": "{{variant.scheme.background}}",
     "breadcrumb.foreground": "{{variant.scheme.sidebarForeground}}",
