@@ -23,7 +23,7 @@
     "scrollbars": "#ebdbb220",
     "scrollbarsHover": "#ebdbb210",
     "statusbarForeground": "#757575",
-    "sidebarBackground": "#1d2021",
+    "sidebarBackground": "#1d202180",
     "sidebarForeground": "#757575",
     "listHoverForeground": "#ebdbb2",
     "listHoverBackground": "#1d2021",
@@ -50,7 +50,23 @@
       "fg0": "#83a598",
       "bg2": "#504945",
       "pink": "#d53880",
-      "violet": "#8f3f71"
+      "violet": "#8f3f71",
+      "ansiWhite": "#CC6229",
+      "ansiBlack": "#645C55",
+      "ansiBlue": "#265DA0",
+      "ansiCyan": "#245954",
+      "ansiGreen": "#1F4C2B",
+      "ansiMagenta": "#865086",
+      "ansiRed": "#CC4129",
+      "ansiYellow": "#D9A336",
+      "ansiBrightWhite": "#FF7A33",
+      "ansiBrightBlack": "#645C55",
+      "ansiBrightBlue": "#498ABF",
+      "ansiBrightCyan": "#509F97",
+      "ansiBrightGreen": "#3D9956",
+      "ansiBrightMagenta": "#B846B5",
+      "ansiBrightRed": "#CD413C",
+      "ansiBrightYellow": "#F6BA4A"
     }
   }
 }
