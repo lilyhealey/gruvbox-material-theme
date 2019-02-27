@@ -37,6 +37,11 @@
         "label": "Gruvbox Material Theme",
         "path": "./themes/Gruvbox-Material-Theme.json",
         "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Gov UK Material Theme",
+        "path": "./themes/GovUK-Material-Theme.json",
+        "uiTheme": "vs-dark"
       }
     ]
   },

@@ -3,9 +3,9 @@
   "name": "GovUK-Material-Theme",
   "type": "dark",
   "scheme": {
-    "background": "#1d2021",
-    "backgroundAlt": "#1d2021",
-    "contrastBorder": "#1d2021",
+    "background": "#0F1113",
+    "backgroundAlt": "#0F1113",
+    "contrastBorder": "#0F1113",
     "comments": "#928374",
     "caret": "#FFCC00",
     "findHighlight": "#FFCC00",
@@ -26,7 +26,7 @@
     "sidebarBackground": "#252525",
     "sidebarForeground": "#757575",
     "listHoverForeground": "#ebdbb2",
-    "listHoverBackground": "#1d2021",
+    "listHoverBackground": "#0F1113",
     "tabActiveForeground": "#ebdbb2",
     "inactiveSelectionBackground": "#00000030",
     "base": {
