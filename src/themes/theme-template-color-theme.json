@@ -713,7 +713,7 @@
     "textLink.foreground": "{{commons.accents.Teal}}",
     "textLink.activeForeground": "{{variant.scheme.foreground}}",
     "editorLineNumber.foreground": "{{variant.scheme.lineNumbers}}",
-    "editorLineNumber.activeForeground": "{{variant.scheme.sidebarForeground}}",
+    "editorLineNumber.activeForeground": "{{variant.scheme.base.ansiYellow}}",
     "editorBracketMatch.border": "{{variant.scheme.caret}}50",
     "editorBracketMatch.background": "{{variant.scheme.background}}",
     "editorWhitespace.foreground": "{{variant.scheme.foreground}}40",

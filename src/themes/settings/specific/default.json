@@ -4,7 +4,7 @@
   "type": "dark",
   "scheme": {
     "background": "#0A0B0D",
-    "backgroundAlt": "#150015",
+    "backgroundAlt": "#303030",
     "contrastBorder": "#8800BB",
     "comments": "#928374",
     "caret": "#FFCC00",
@@ -23,7 +23,7 @@
     "scrollbars": "#ebdbb220",
     "scrollbarsHover": "#ebdbb210",
     "statusbarForeground": "#757575",
-    "sidebarBackground": "#070007",
+    "sidebarBackground": "#0F1012",
     "sidebarForeground": "#757575",
     "listHoverForeground": "#ebdbb2",
     "listHoverBackground": "#0F1113",
