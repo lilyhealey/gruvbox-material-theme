@@ -6,11 +6,21 @@
     "activityBar.foreground": "{{variant.ui.fg0}}",
     "activityBar.inactiveForeground": "{{variant.ui.fg1}}",
 
+    "activityBarBadge.background": "{{variant.highlight.active.background}}",
+    "activityBarBadge.foreground": "{{variant.highlight.active.foreground}}",
+
+    "diffEditor.insertedTextBackground": "{{variant.git.added}}50",
+    "diffEditor.removedTextBackground": "{{variant.git.deleted}}50",
+
     "editor.background": "{{variant.editor.bg0}}",
     "editor.foreground": "{{variant.editor.fg0}}",
     "editor.lineHighlightBackground": "{{variant.editor.bg1}}",
 
+    "editorBracketMatch.background": "{{variant.highlight.active.background}}",
+    "editorBracketMatch.border": "{{variant.transparent}}",
+
     "editorGroup.border": "{{variant.transparent}}",
+    "editorGroup.dropBackground": "{{variant.highlight.active.background}}50",
 
     "editorGroupHeader.noTabsBackground": "{{variant.ui.background}}",
     "editorGroupHeader.tabsBackground": "{{variant.ui.background}}",
@@ -44,6 +54,19 @@
     "editorOverviewRuler.wordHighlightForeground": "{{variant.transparent}}",
     "editorOverviewRuler.wordHighlightStrongForeground": "{{variant.transparent}}",
 
+    "editorRuler.foreground": "{{variant.editor.bg1}}",
+
+    "editorSuggestWidget.background": "{{variant.ui.background}}",
+    "editorSuggestWidget.border": "{{variant.transparent}}",
+    "editorSuggestWidget.foreground": "{{variant.ui.fg1}}",
+    "editorSuggestWidget.highlightForeground": "{{variant.ui.fg0}}",
+    "editorSuggestWidget.selectedBackground": "{{variant.highlight.active.background}}",
+
+    "focusBorder": "{{variant.transparent}}",
+
+    "selection.background": "{{variant.highlight.active.background}}",
+    "selection.foreground": "{{variant.highlight.active.foreground}}",
+
     "tab.activeBackground": "{{variant.highlight.active.background}}",
     "tab.activeForeground": "{{variant.highlight.active.foreground}}",
     "tab.inactiveBackground": "{{variant.ui.background}}",
@@ -53,6 +76,11 @@
     "titleBar.activeForeground": "{{variant.ui.fg0}}",
     "titleBar.inactiveBackground": "{{variant.ui.background}}",
     "titleBar.inactiveForeground": "{{variant.ui.fg1}}",
+
+    "scrollbarSlider.background": "{{variant.transparent}}",
+    "scrollbarSlider.activeBackground": "{{variant.transparent}}",
+    "scrollbarSlider.hoverBackground": "{{variant.transparent}}",
+    "scrollbar.shadow": "{{variant.transparent}}",
 
     "sideBar.background": "{{variant.ui.background}}",
     "sideBar.foreground": "{{variant.ui.fg0}}",

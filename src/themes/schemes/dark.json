@@ -5,6 +5,7 @@
   "editor": {
     "bg0": "{{variant.colours.black.0}}",
     "bg1": "{{variant.colours.black.2}}",
+    "bg2": "{{variant.colours.black.7}}",
     "fg0": "{{variant.colours.white.0}}",
     "fg1": "{{variant.colours.white.5}}"
   },
@@ -16,11 +17,11 @@
   },
   "highlight": {
     "active": {
-      "background": "{{variant.colours.dark.purple}}",
+      "background": "{{variant.colours.dark.blue}}",
       "foreground": "{{variant.colours.white.0}}"
     },
     "inactive": {
-      "background": "{{variant.colours.dark.purple}}AA",
+      "background": "{{variant.colours.dark.blue}}AA",
       "foreground": "{{variant.colours.white.0}}"
     }
   },
