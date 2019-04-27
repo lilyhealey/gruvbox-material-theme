@@ -1,0 +1,32 @@
+{
+  "id": "{{variant.id}}-dark.theme",
+  "name": "{{variant.name}}-Dark-Theme",
+  "type": "dark",
+  "editor": {
+    "bg0": "{{variant.colours.black.0}}",
+    "bg1": "{{variant.colours.black.2}}",
+    "fg0": "{{variant.colours.white.0}}",
+    "fg1": "{{variant.colours.white.5}}"
+  },
+  "transparent": "#00000000",
+  "ui": {
+    "background": "{{variant.colours.black.1}}",
+    "fg0": "{{variant.colours.white.2}}",
+    "fg1": "{{variant.colours.white.5}}"
+  },
+  "highlight": {
+    "active": {
+      "background": "{{variant.colours.dark.purple}}",
+      "foreground": "{{variant.colours.white.0}}"
+    },
+    "inactive": {
+      "background": "{{variant.colours.dark.purple}}AA",
+      "foreground": "{{variant.colours.white.0}}"
+    }
+  },
+  "git": {
+    "added": "{{variant.colours.dark.teal}}",
+    "deleted": "{{variant.colours.dark.red}}",
+    "modified": "{{variant.colours.dark.green}}"
+  }
+}

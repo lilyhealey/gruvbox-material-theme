@@ -4,50 +4,122 @@ import * as gulpUtil from 'gulp-util';
 import * as mustache from 'mustache';
 import * as path from 'path';
 
-import {HR, MESSAGE_GENERATED, MESSAGE_THEME_VARIANT_PARSE_ERROR} from './../consts/log';
+import {
+  HR,
+  MESSAGE_GENERATED,
+  // MESSAGE_THEME_VARIANT_PARSE_ERROR
+} from './../consts/log';
 
 import {CHARSET} from './../../extensions/consts/files';
-import {IThemeVariant} from './../interfaces/itheme-variant';
+import {
+  ColourVariant,
+  // IThemeVariant,
+  ThemeVariant
+} from './../interfaces/itheme-variant';
 import paths from './../../extensions/consts/paths';
-import {ensureDir, getDefaultValues} from './../../extensions/helpers/fs';
+import {
+  ensureDir,
+  // getDefaultValues
+} from './../../extensions/helpers/fs';
 
-const commons = getDefaultValues();
+// const commons = getDefaultValues();
 
-const themeTemplateFileContent: string =
-  fs.readFileSync(
-    path.join(
-      paths.SRC,
-      '/themes/theme-template-color-theme.json'
-    ),
-    CHARSET
-  );
+// const template: string =
+//   fs.readFileSync(
+//     path.join(
+//       paths.SRC,
+//       '/themes/theme-template-color-theme.json'
+//     ),
+//     CHARSET
+//   );
 
-const themeVariants: IThemeVariant[] = [];
+const template: string = fs.readFileSync(
+  path.join(
+    paths.SRC,
+    '/themes/theme-template.json'
+  ),
+  CHARSET
+);
 
-const fileNames: string[] =
+const tokenTemplate: string = fs.readFileSync(
+  path.join(
+    paths.SRC,
+    '/themes/token-template.json'
+  ),
+  CHARSET
+);
+
+const colourVariants: ColourVariant[] = [];
+const themeVariants: ThemeVariant[] = [];
+
+const colourFileNames: string[] =
   fs.readdirSync(
     path.join(
       paths.SRC,
-      './themes/settings/specific'
+      './themes/colours'
+    )
+  );
+
+const themeFileNames: string[] =
+  fs.readdirSync(
+    path.join(
+      paths.SRC,
+      './themes/schemes'
     )
   );
 
 // build theme variants for later use in templating
-fileNames.forEach(fileName => {
+colourFileNames.forEach(fileName => {
   const filePath: string =
     path.join(
       paths.SRC,
-      './themes/settings/specific',
+      './themes/colours',
       `./${fileName}`
     );
 
-  const contents: string = fs.readFileSync(filePath, CHARSET);
+  const contents: string =
+    fs.readFileSync(
+      filePath,
+      CHARSET
+    );
 
   try {
-    themeVariants.push(JSON.parse(contents));
+    // themeVariants.push(JSON.parse(contents));
+    colourVariants.push(JSON.parse(contents));
   } catch (error) {
-    gulpUtil.log(MESSAGE_THEME_VARIANT_PARSE_ERROR, error);
+    gulpUtil.log('Error parsing colour variants.', error);
   }
+});
+
+colourVariants.forEach(variant => {
+  themeFileNames.forEach(fileName => {
+    const filePath: string =
+      path.join(
+        paths.SRC,
+        './themes/schemes',
+        `./${fileName}`
+      );
+
+    const schemeTemplate: string =
+      fs.readFileSync(
+        filePath,
+        CHARSET
+      );
+
+    try {
+      // themeVariants.push(JSON.parse(contents));
+      const templateJSON: any = JSON.parse(
+        mustache.render(schemeTemplate, {variant})
+      );
+      const tokenTemplateJSON: any = JSON.parse(
+        mustache.render(tokenTemplate, {variant})
+      );
+      templateJSON.tokenColors = tokenTemplateJSON.tokenColours;
+      themeVariants.push(templateJSON);
+    } catch (error) {
+      gulpUtil.log('Error parsing theme variants.', error);
+    }
+  });
 });
 
 /**
@@ -62,8 +134,11 @@ export default gulp.task('build:themes', cb => {
   try {
     themeVariants.forEach(variant => {
       const filePath = path.join(paths.THEMES, `./${variant.name}.json`);
-      const templateData = {commons, variant};
-      const templateJSON: any = JSON.parse(mustache.render(themeTemplateFileContent, templateData));
+      // const templateData = {commons, variant};
+      const templateData = {variant};
+      const tokenColors = variant.tokenColors;
+      const templateJSON: any = JSON.parse(mustache.render(template, templateData));
+      templateJSON.tokenColors = tokenColors;
       const templateJSONStringified: string = JSON.stringify(templateJSON, null, 2);
 
       fs.writeFileSync(filePath, templateJSONStringified, {encoding: CHARSET});

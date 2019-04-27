@@ -17,7 +17,7 @@ export interface IThemeVariant {
       violet: string;
       white: string;
       yellow: string;
-    }
+    };
     caret: string;
     comments: string;
     findHighlight: string;
@@ -37,6 +37,43 @@ export interface IThemeVariant {
     shadow: string;
     sidebarForeground: string;
     statusbarForeground: string;
-  }
+  };
   type: string;
+}
+
+interface ColourSet {
+  red: string;
+  orange: string;
+  yellow: string;
+  green: string;
+  teal: string;
+  blue: string;
+  purple: string;
+}
+
+export interface ColourVariant {
+  id: string;
+  name: string;
+  colours: {
+    dark: ColourSet;
+    medium: ColourSet;
+    light: ColourSet;
+  };
+  black: string[];
+  white: string[];
+}
+
+export interface ThemeVariant {
+  id: string;
+  name: string;
+  type: string;
+  editor: {
+    background: string;
+    foreground: string;
+  };
+  ui: {
+    background: string;
+    foreground: string;
+  };
+  tokenColors: any[];
 }

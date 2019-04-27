@@ -2,6 +2,33 @@
   "id": "govuk-material.theme",
   "name": "GovUK-Material-Theme",
   "type": "dark",
+  "dark": {
+    "red": "#9D0006",
+    "orange": "#AF3A03",
+    "yellow": "#B57614",
+    "green": "#79740E",
+    "teal": "#427B58",
+    "blue": "#076678",
+    "purple": "#8F3F71"
+  },
+  "medium": {
+    "red": "#CC241D",
+    "orange": "#D65D0E",
+    "yellow": "#D79921",
+    "green": "#B8BB26",
+    "teal": "#689D6A",
+    "blue": "#458588",
+    "purple": "#B16286"
+  },
+  "light": {
+    "red": "#FB4934",
+    "orange": "#FE8019",
+    "yellow": "#FABD2F",
+    "green": "#B8BB26",
+    "teal": "#8EC07C",
+    "blue": "#83A598",
+    "purple": "#D3869B"
+  },
   "scheme": {
     "background": "#0F1113",
     "backgroundAlt": "#0F1113",

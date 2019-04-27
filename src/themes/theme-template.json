@@ -1,0 +1,63 @@
+{
+  "name": "{{variant.name}}",
+  "type": "{{variant.type}}",
+  "colors": {
+    "activityBar.background": "{{variant.ui.background}}",
+    "activityBar.foreground": "{{variant.ui.fg0}}",
+    "activityBar.inactiveForeground": "{{variant.ui.fg1}}",
+
+    "editor.background": "{{variant.editor.bg0}}",
+    "editor.foreground": "{{variant.editor.fg0}}",
+    "editor.lineHighlightBackground": "{{variant.editor.bg1}}",
+
+    "editorGroup.border": "{{variant.transparent}}",
+
+    "editorGroupHeader.noTabsBackground": "{{variant.ui.background}}",
+    "editorGroupHeader.tabsBackground": "{{variant.ui.background}}",
+
+    "editorGutter.addedBackground": "{{variant.git.added}}AA",
+    "editorGutter.background": "{{variant.transparent}}",
+    "editorGutter.commentRangeForeground": "#645C55",
+    "editorGutter.deletedBackground": "{{variant.git.deleted}}AA",
+    "editorGutter.modifiedBackground": "{{variant.git.modified}}AA",
+
+    "editorLineNumber.activeForeground": "{{variant.editor.fg0}}",
+    "editorLineNumber.foreground": "{{variant.editor.fg1}}",
+
+    "editorIndentGuide.activeBackground": "{{variant.transparent}}",
+    "editorIndentGuide.background": "{{variant.transparent}}",
+
+    "editorOverviewRuler.addedForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.border": "{{variant.transparent}}",
+    "editorOverviewRuler.bracketMatchForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.commonContentForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.currentContentForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.deletedForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.errorForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.findMatchForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.incomingContentForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.infoForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.modifiedForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.rangeHighlightForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.selectionHighlightForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.warningForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.wordHighlightForeground": "{{variant.transparent}}",
+    "editorOverviewRuler.wordHighlightStrongForeground": "{{variant.transparent}}",
+
+    "tab.activeBackground": "{{variant.highlight.active.background}}",
+    "tab.activeForeground": "{{variant.highlight.active.foreground}}",
+    "tab.inactiveBackground": "{{variant.ui.background}}",
+    "tab.inactiveForeground": "{{variant.ui.fg1}}",
+
+    "titleBar.activeBackground": "{{variant.ui.background}}",
+    "titleBar.activeForeground": "{{variant.ui.fg0}}",
+    "titleBar.inactiveBackground": "{{variant.ui.background}}",
+    "titleBar.inactiveForeground": "{{variant.ui.fg1}}",
+
+    "sideBar.background": "{{variant.ui.background}}",
+    "sideBar.foreground": "{{variant.ui.fg0}}",
+
+    "statusBar.background": "{{variant.ui.background}}",
+    "statusBar.foreground": "{{variant.ui.fg1}}"
+  }
+}
