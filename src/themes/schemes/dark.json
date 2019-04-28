@@ -4,30 +4,40 @@
   "type": "dark",
   "editor": {
     "bg0": "{{variant.colours.black.0}}",
-    "bg1": "{{variant.colours.black.2}}",
+    "bg1": "{{variant.colours.black.1}}",
     "bg2": "{{variant.colours.black.7}}",
     "fg0": "{{variant.colours.white.0}}",
-    "fg1": "{{variant.colours.white.5}}"
+    "fg1": "{{variant.colours.white.3}}",
+    "fg2": "{{variant.colours.black.5}}"
   },
   "transparent": "#00000000",
   "ui": {
-    "background": "{{variant.colours.black.1}}",
+    "bg0": "{{variant.colours.black.1}}",
     "fg0": "{{variant.colours.white.2}}",
     "fg1": "{{variant.colours.white.5}}"
   },
   "highlight": {
     "active": {
-      "background": "{{variant.colours.dark.blue}}",
-      "foreground": "{{variant.colours.white.0}}"
+      "light": "{{variant.colours.light.teal}}",
+      "medium": "{{variant.colours.medium.teal}}",
+      "dark": "{{variant.colours.dark.teal}}",
+      "black": "{{variant.colours.black.0}}",
+      "white": "{{variant.colours.white.0}}"
     },
     "inactive": {
-      "background": "{{variant.colours.dark.blue}}AA",
+      "background": "{{variant.colours.dark.teal}}AA",
       "foreground": "{{variant.colours.white.0}}"
-    }
+    },
+    "error": "{{variant.colours.light.red}}",
+    "warning": "{{variant.colours.light.purple}}"
   },
   "git": {
-    "added": "{{variant.colours.dark.teal}}",
-    "deleted": "{{variant.colours.dark.red}}",
-    "modified": "{{variant.colours.dark.green}}"
+    "added": "{{variant.colours.light.teal}}",
+    "conflicting": "{{variant.colours.light.red}}",
+    "deleted": "{{variant.colours.medium.orange}}",
+    "ignored": "{{variant.colours.black.5}}",
+    "modified": "{{variant.colours.light.yellow}}",
+    "submodule": "{{variant.colours.light.purple}}",
+    "untracked": "{{variant.colours.light.orange}}"
   }
 }
