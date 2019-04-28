@@ -15,7 +15,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "{{variant.colours.white.5}}"
+        "foreground": "{{variant.colours.black.7}}"
       }
     },
     {

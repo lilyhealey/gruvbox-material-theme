@@ -2,12 +2,15 @@
   "name": "{{variant.name}}",
   "type": "{{variant.type}}",
   "colors": {
-    "activityBar.background": "{{variant.ui.background}}",
+    "activityBar.background": "{{variant.ui.bg0}}",
     "activityBar.foreground": "{{variant.ui.fg0}}",
     "activityBar.inactiveForeground": "{{variant.ui.fg1}}",
 
-    "activityBarBadge.background": "{{variant.highlight.active.background}}",
-    "activityBarBadge.foreground": "{{variant.highlight.active.foreground}}",
+    "activityBarBadge.background": "{{variant.highlight.active.dark}}",
+    "activityBarBadge.foreground": "{{variant.highlight.active.white}}",
+
+    "badge.background": "{{variant.highlight.active.dark}}",
+    "badge.foreground": "{{variant.highlight.active.white}}",
 
     "diffEditor.insertedTextBackground": "{{variant.git.added}}50",
     "diffEditor.removedTextBackground": "{{variant.git.deleted}}50",
@@ -15,15 +18,19 @@
     "editor.background": "{{variant.editor.bg0}}",
     "editor.foreground": "{{variant.editor.fg0}}",
     "editor.lineHighlightBackground": "{{variant.editor.bg1}}",
+    "editor.selectionHighlightBackground": "{{variant.highlight.active.dark}}77",
 
-    "editorBracketMatch.background": "{{variant.highlight.active.background}}",
+    "editorBracketMatch.background": "{{variant.highlight.active.dark}}",
     "editorBracketMatch.border": "{{variant.transparent}}",
 
-    "editorGroup.border": "{{variant.transparent}}",
-    "editorGroup.dropBackground": "{{variant.highlight.active.background}}50",
+    "editorError.foreground": "{{variant.highlight.error}}",
+    "editorWarning.foreground": "{{variant.highlight.warning}}",
 
-    "editorGroupHeader.noTabsBackground": "{{variant.ui.background}}",
-    "editorGroupHeader.tabsBackground": "{{variant.ui.background}}",
+    "editorGroup.border": "{{variant.transparent}}",
+    "editorGroup.dropBackground": "{{variant.highlight.active.dark}}50",
+
+    "editorGroupHeader.noTabsBackground": "{{variant.ui.bg0}}",
+    "editorGroupHeader.tabsBackground": "{{variant.ui.bg0}}",
 
     "editorGutter.addedBackground": "{{variant.git.added}}AA",
     "editorGutter.background": "{{variant.transparent}}",
@@ -31,8 +38,8 @@
     "editorGutter.deletedBackground": "{{variant.git.deleted}}AA",
     "editorGutter.modifiedBackground": "{{variant.git.modified}}AA",
 
-    "editorLineNumber.activeForeground": "{{variant.editor.fg0}}",
-    "editorLineNumber.foreground": "{{variant.editor.fg1}}",
+    "editorLineNumber.activeForeground": "{{variant.highlight.active.light}}",
+    "editorLineNumber.foreground": "{{variant.editor.fg2}}",
 
     "editorIndentGuide.activeBackground": "{{variant.transparent}}",
     "editorIndentGuide.background": "{{variant.transparent}}",
@@ -56,25 +63,48 @@
 
     "editorRuler.foreground": "{{variant.editor.bg1}}",
 
-    "editorSuggestWidget.background": "{{variant.ui.background}}",
+    "editorSuggestWidget.background": "{{variant.ui.bg0}}",
     "editorSuggestWidget.border": "{{variant.transparent}}",
     "editorSuggestWidget.foreground": "{{variant.ui.fg1}}",
     "editorSuggestWidget.highlightForeground": "{{variant.ui.fg0}}",
-    "editorSuggestWidget.selectedBackground": "{{variant.highlight.active.background}}",
+    "editorSuggestWidget.selectedBackground": "{{variant.highlight.active.dark}}",
+
+    "editorWidget.background": "{{variant.ui.bg0}}",
+    "editorWidget.resizeBorder": "{{variant.highlight.active.dark}}",
 
     "focusBorder": "{{variant.transparent}}",
 
-    "selection.background": "{{variant.highlight.active.background}}",
-    "selection.foreground": "{{variant.highlight.active.foreground}}",
+    "gitDecoration.addedResourceForeground": "{{variant.git.added}}",
+    "gitDecoration.conflictingResourceForeground": "{{variant.git.conflicting}}",
+    "gitDecoration.deletedResourceForeground": "{{variant.git.deleted}}",
+    "gitDecoration.ignoredResourceForeground": "{{variant.git.ignored}}",
+    "gitDecoration.modifiedResourceForeground": "{{variant.git.modified}}",
+    "gitDecoration.submoduleResourceForeground": "{{variant.git.submodule}}",
+    "gitDecoration.untrackedResourceForeground": "{{variant.git.untracked}}",
 
-    "tab.activeBackground": "{{variant.highlight.active.background}}",
-    "tab.activeForeground": "{{variant.highlight.active.foreground}}",
-    "tab.inactiveBackground": "{{variant.ui.background}}",
+    "input.background": "{{variant.editor.bg0}}",
+
+    "list.focusBackground": "{{variant.highlight.active.dark}}77",
+    "list.focusForeground": "{{variant.ui.fg0}}",
+
+    "pickerGroup.border": "{{variant.highlight.active.medium}}",
+    "pickerGroup.foreground": "{{variant.highlight.active.medium}}",
+
+    "selection.background": "{{variant.highlight.active.dark}}",
+    "selection.foreground": "{{variant.highlight.active.white}}",
+
+    "tab.activeBackground": "{{variant.transparent}}",
+    "tab.activeBorderTop": "{{variant.highlight.active.medium}}",
+    "tab.activeForeground": "{{variant.highlight.active.medium}}",
+    "tab.border": "{{variant.transparent}}",
+    "tab.inactiveBackground": "{{variant.ui.bg0}}",
     "tab.inactiveForeground": "{{variant.ui.fg1}}",
+    "tab.unfocusedActiveForeground": "{{variant.ui.fg1}}",
+    "tab.unfocusedActiveBorderTop": "{{variant.ui.fg1}}",
 
-    "titleBar.activeBackground": "{{variant.ui.background}}",
+    "titleBar.activeBackground": "{{variant.ui.bg0}}",
     "titleBar.activeForeground": "{{variant.ui.fg0}}",
-    "titleBar.inactiveBackground": "{{variant.ui.background}}",
+    "titleBar.inactiveBackground": "{{variant.ui.bg0}}",
     "titleBar.inactiveForeground": "{{variant.ui.fg1}}",
 
     "scrollbarSlider.background": "{{variant.transparent}}",
@@ -82,10 +112,13 @@
     "scrollbarSlider.hoverBackground": "{{variant.transparent}}",
     "scrollbar.shadow": "{{variant.transparent}}",
 
-    "sideBar.background": "{{variant.ui.background}}",
-    "sideBar.foreground": "{{variant.ui.fg0}}",
+    "sideBar.background": "{{variant.ui.bg0}}",
+    "sideBar.foreground": "{{variant.ui.fg1}}",
 
-    "statusBar.background": "{{variant.ui.background}}",
+    "sideBarSectionHeader.background": "{{variant.ui.bg0}}",
+    "sideBarSectionHeader.foreground": "{{variant.highlight.active.medium}}",
+
+    "statusBar.background": "{{variant.ui.bg0}}",
     "statusBar.foreground": "{{variant.ui.fg1}}"
   }
 }
