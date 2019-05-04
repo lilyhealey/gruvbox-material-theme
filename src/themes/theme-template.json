@@ -70,6 +70,7 @@
     "editorSuggestWidget.selectedBackground": "{{variant.highlight.active.dark}}",
 
     "editorWidget.background": "{{variant.ui.bg0}}",
+    "editorWidget.border": "{{variant.transparent}}",
     "editorWidget.resizeBorder": "{{variant.highlight.active.dark}}",
 
     "focusBorder": "{{variant.transparent}}",
