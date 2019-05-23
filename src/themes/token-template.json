@@ -65,7 +65,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "{{variant.colours.medium.blue}}"
+        "foreground": "{{variant.colours.white.4}}"
       }
     },
     {
