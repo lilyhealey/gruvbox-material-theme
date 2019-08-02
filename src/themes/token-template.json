@@ -220,7 +220,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "{{variant.colours.light.purple}}"
+        "foreground": "{{variant.colours.light.yellow}}"
       }
     },
     {
